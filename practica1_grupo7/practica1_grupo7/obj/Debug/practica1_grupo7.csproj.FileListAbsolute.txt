@@ -5,3 +5,10 @@ C:\Users\Home\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo
 C:\Users\Home\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csproj.CoreCompileInputs.cache
 C:\Users\Home\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.exe
 C:\Users\Home\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.pdb
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csprojAssemblyReference.cache
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csproj.CoreCompileInputs.cache
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.exe
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.pdb
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.exe.config
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.exe
+C:\Users\steve\Documents\GitHub\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.pdb

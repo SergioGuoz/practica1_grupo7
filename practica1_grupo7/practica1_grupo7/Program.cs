@@ -11,8 +11,10 @@ namespace practica1_grupo7
         static void Main(string[] args)
         {
             //numero_Primo();
-            Discriminante();
-            ValorAbsoluto();
+            //Discriminante();
+            //ValorAbsoluto();
+            //Potencia_al_cubo();
+            RaizAlCubo();
         }
 
         static void numero_Primo()
@@ -71,6 +73,33 @@ namespace practica1_grupo7
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = int.Parse(Console.ReadLine());
             Console.WriteLine("El valor absulito de ({0}) es {1} ", numero, Math.Abs(numero));
+
+            //Esto es para poder ver el resultado y no se cierre la consola
+            Console.ReadKey();
+        }
+
+        static void Potencia_al_cubo()
+        {
+            double numero;
+
+            Console.WriteLine("Porfavor Ingresar un numero");
+            numero = double.Parse(Console.ReadLine());
+            Console.WriteLine("El cubo de ({0}) es {1} ", numero, Math.Pow(numero,3));
+
+            //Esto es para poder ver el resultado y no se cierre la consola
+            Console.ReadKey();
+        }
+
+        static void RaizAlCubo() {
+
+            Console.WriteLine("****** RAIZ CUBICA *******");
+            Console.WriteLine("Ingrese un número");
+
+            double radicando = double.Parse(Console.ReadLine());
+            double potencia = 1.0 / 3.0;
+            double resultado = Math.Pow(radicando, potencia);
+
+            Console.WriteLine("RESULTADO: Raiz Cubica de {0} es {1}" ,radicando,resultado);
 
             //Esto es para poder ver el resultado y no se cierre la consola
             Console.ReadKey();

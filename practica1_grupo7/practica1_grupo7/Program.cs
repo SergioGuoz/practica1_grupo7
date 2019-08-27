@@ -22,16 +22,21 @@ namespace practica1_grupo7
 
         static void numero_Primo()
         {
+            Console.WriteLine("--------------NUMERO PRIMO-------------");
             Console.WriteLine("Ingrese el número");
             int Numero = int.Parse(Console.ReadLine());
-            if((Numero % 2) == 0)
+            for (int i = 1; i < (Numero + 1); i++)
             {
-                Console.WriteLine("Par");
+                if ((Numero % i) == 0)
+                {
+                    Console.WriteLine("No Primo");
+                }
+                else
+                {
+                    Console.WriteLine("Primo");
+                }
             }
-            else
-            {
-                Console.WriteLine("INPar");
-            }
+           
         }
 
         static void Discriminante()

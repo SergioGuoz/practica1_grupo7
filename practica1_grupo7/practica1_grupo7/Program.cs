@@ -12,6 +12,7 @@ namespace practica1_grupo7
         {
             //numero_Primo();
             Discriminante();
+            ValorAbsoluto();
         }
 
         static void numero_Primo()
@@ -63,13 +64,17 @@ namespace practica1_grupo7
 
             Console.ReadLine();
         }
+        static void ValorAbsoluto()
+        {
+            int numero;
+
+            Console.WriteLine("Porfavor Ingresar un numero");
+            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("El valor absulito de ({0}) es {1} ", numero, Math.Abs(numero));
+
+            //Esto es para poder ver el resultado y no se cierre la consola
+            Console.ReadKey();
+        }
+    }
     
-
-
-
-
-}
-
-
-
 }

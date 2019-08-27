@@ -36,12 +36,16 @@ namespace practica1_grupo7
 
         static void Discriminante()
         {
+            Console.WriteLine("\n\t\t -- Funcion de division (dividendo/divisor) --\n");
+            Console.WriteLine("el discriminante de un polinomio es una cierta expresión de los coeficientes de dicho polinomio ");
+            Console.WriteLine("que es igual a cero si y solo si el polinomio tiene raíces múltiples en el plano complejo.\n");
+
             double a, b, c, discriminante, x1, x2;
-            Console.WriteLine("Ingrese El Coeficiente de A");
+            Console.Write("Ingrese El Coeficiente de A");
             a = double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese El Coeficiente de B");
+            Console.Write("Ingrese El Coeficiente de B");
             b = double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese El Coeficiente de C");
+            Console.Write("Ingrese El Coeficiente de C");
             c = double.Parse(Console.ReadLine());
             discriminante = ((b * b) - (4 * (a * c)));
 
@@ -111,14 +115,17 @@ namespace practica1_grupo7
 
         static void Division()
         {
-            int a = 0, b=0;
-            Console.WriteLine("Funcion de division (dividendo/divisor)");
-            Console.WriteLine("Ingrese el dividendo: ");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese el divisor: ");
-            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n\t\t -- Funcion de division (dividendo/divisor) --\n");
+            Console.WriteLine("Descripcion:  la división es una operación parcialmente definida en el conjunto de los ");
+            Console.WriteLine("números naturales y los números enteros; en cambio, en el caso de los números racionales, ");
+            Console.WriteLine("reales y complejos es siempre posible efectuar la división, exigiendo que el divisor sea distinto de cero.\n");
+            Console.Write("Ingrese el dividendo: ");
 
-            if(b == 0)
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese el divisor: ");
+            double b = double.Parse(Console.ReadLine());
+
+            if (b == 0)
             {
                 try
                 {
@@ -131,7 +138,7 @@ namespace practica1_grupo7
             }
             else
             {
-                Console.WriteLine("El resultado es: " + (double)a / b);
+                Console.WriteLine("El resultado es: " + a / b);
             }
             
 
@@ -141,12 +148,14 @@ namespace practica1_grupo7
 
         static void Multiplicacion()
         {
-            double a, b;
-            Console.WriteLine("Funcion de multiplicacion");
-            Console.WriteLine("Ingrese el primer valor: ");
-            a = double.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo valor: ");
-            b = double.Parse(Console.ReadLine());
+            Console.WriteLine("\n\t\t -- Funcion de multiplicacion --\n");
+            Console.WriteLine("Descripcion: La multiplicación es una operación binaria que se establece en un conjunto numérico.2​ ");
+            Console.WriteLine("Tal el caso de números naturales, consiste en sumar un número tantas veces como indica otro número.\n");
+
+            Console.Write("Ingrese el primer valor: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese el segundo valor: ");
+            double b = double.Parse(Console.ReadLine());
 
             Console.WriteLine("El resultado es: " + a * b);
             Console.ReadLine();

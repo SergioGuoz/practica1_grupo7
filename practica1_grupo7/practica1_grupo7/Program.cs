@@ -10,13 +10,14 @@ namespace practica1_grupo7
     {
         static void Main(string[] args)
         {
+           
             //numero_Primo();
             //Discriminante();
             //ValorAbsoluto();
             //Potencia_al_cubo();
             //RaizAlCubo();
             Division();
-            Multiplicacion();
+            //Multiplicacion();
         }
 
         static void numero_Primo()
@@ -110,14 +111,31 @@ namespace practica1_grupo7
 
         static void Division()
         {
-            double a, b;
+            int a = 0, b=0;
             Console.WriteLine("Funcion de division (dividendo/divisor)");
             Console.WriteLine("Ingrese el dividendo: ");
-            a = double.Parse(Console.ReadLine());
+            a = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el divisor: ");
-            b = double.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("El resultado es: " + a/b);
+            if(b == 0)
+            {
+                try
+                {
+                    Console.WriteLine("El resultado es: " + a / b);
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Division de {0} por cero no se puede realizar.", a);
+                }
+            }
+            else
+            {
+                Console.WriteLine("El resultado es: " + (double)a / b);
+            }
+            
+
+
             Console.ReadLine();
         }
 

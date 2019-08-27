@@ -14,7 +14,9 @@ namespace practica1_grupo7
             //Discriminante();
             //ValorAbsoluto();
             //Potencia_al_cubo();
-            RaizAlCubo();
+            //RaizAlCubo();
+            Division();
+            Multiplicacion();
         }
 
         static void numero_Primo()
@@ -66,6 +68,7 @@ namespace practica1_grupo7
 
             Console.ReadLine();
         }
+
         static void ValorAbsoluto()
         {
             int numero;
@@ -104,6 +107,33 @@ namespace practica1_grupo7
             //Esto es para poder ver el resultado y no se cierre la consola
             Console.ReadKey();
         }
+
+        static void Division()
+        {
+            double a, b;
+            Console.WriteLine("Funcion de division (dividendo/divisor)");
+            Console.WriteLine("Ingrese el dividendo: ");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el divisor: ");
+            b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("El resultado es: " + a/b);
+            Console.ReadLine();
+        }
+
+        static void Multiplicacion()
+        {
+            double a, b;
+            Console.WriteLine("Funcion de multiplicacion");
+            Console.WriteLine("Ingrese el primer valor: ");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo valor: ");
+            b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("El resultado es: " + a * b);
+            Console.ReadLine();
+        }
+
     }
     
 }

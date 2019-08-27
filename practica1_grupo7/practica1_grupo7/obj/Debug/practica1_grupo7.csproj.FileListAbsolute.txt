@@ -19,3 +19,10 @@ C:\Users\Sergio Guoz\Desktop\[AYD1]Practica1\practica1_grupo7\practica1_grupo7\p
 C:\Users\Sergio Guoz\Desktop\[AYD1]Practica1\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csproj.CoreCompileInputs.cache
 C:\Users\Sergio Guoz\Desktop\[AYD1]Practica1\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.exe
 C:\Users\Sergio Guoz\Desktop\[AYD1]Practica1\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.pdb
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.exe.config
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.exe
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\bin\Debug\practica1_grupo7.pdb
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csprojAssemblyReference.cache
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.csproj.CoreCompileInputs.cache
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.exe
+C:\Users\Hilbert Perucho\Desktop\USAC\14vo Semestre 2019\ANALISIS 1\LAB\practica1_grupo7\practica1_grupo7\practica1_grupo7\obj\Debug\practica1_grupo7.pdb

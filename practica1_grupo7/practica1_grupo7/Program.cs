@@ -82,6 +82,12 @@ namespace practica1_grupo7
         static void ValorAbsoluto()
         {
             int numero;
+          
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("La siguinte funcion describe el como calcular un valor absoluto");
+            Console.WriteLine("Un Valor absoluto es es tomar un numero sin importar su signo");
+            Console.Write("\n");
+            Console.ForegroundColor = ConsoleColor.Cyan;
 
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = int.Parse(Console.ReadLine());

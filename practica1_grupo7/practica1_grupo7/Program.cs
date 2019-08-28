@@ -13,9 +13,9 @@ namespace practica1_grupo7
            
             //numero_Primo();
             //Discriminante();
-            //ValorAbsoluto();
+            ValorAbsoluto();
             //Potencia_al_cubo();
-            RaizAlCubo();
+            //RaizAlCubo();
             //Division();
             //Multiplicacion();
         }
@@ -82,11 +82,32 @@ namespace practica1_grupo7
         static void ValorAbsoluto()
         {
             int numero;
+            string opcion;
 
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("La siguinte funcion describe el como calcular un valor absoluto");
+            Console.WriteLine("Un Valor absoluto es es tomar un numero sin importar su signo");
+            Console.Write("\n");
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = int.Parse(Console.ReadLine());
             Console.WriteLine("El valor absulito de ({0}) es {1} ", numero, Math.Abs(numero));
-
+            Console.Write("\n");
+            Console.Write("Desea repetir la funcion? Escriba y/n (y=yes n=no)");
+            Console.Write("\n");
+            opcion = Console.ReadLine();
+            if (opcion == "y")
+            {
+                ValorAbsoluto();
+            }
+            else if (opcion=="n")
+            {
+                Console.WriteLine("Saliendo....");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Opcion no valida");
+            }
             //Esto es para poder ver el resultado y no se cierre la consola
             Console.ReadKey();
         }
@@ -94,7 +115,6 @@ namespace practica1_grupo7
         static void Potencia_al_cubo()
         {
             double numero;
-
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = double.Parse(Console.ReadLine());
             Console.WriteLine("El cubo de ({0}) es {1} ", numero, Math.Pow(numero,3));

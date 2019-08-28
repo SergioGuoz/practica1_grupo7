@@ -88,7 +88,7 @@ namespace practica1_grupo7
             Console.WriteLine("La siguinte funcion describe el como calcular un valor absoluto");
             Console.WriteLine("Un Valor absoluto es es tomar un numero sin importar su signo");
             Console.Write("\n");
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = int.Parse(Console.ReadLine());
             Console.WriteLine("El valor absulito de ({0}) es {1} ", numero, Math.Abs(numero));

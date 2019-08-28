@@ -49,14 +49,6 @@ namespace practica1_grupo7
                 Console.ReadKey();
             } while (opcion!=8);
             
-
-            //numero_Primo();
-            //
-            //
-            //
-            //
-            //
-            //
         }
 
         static void numero_Primo()
@@ -244,15 +236,29 @@ namespace practica1_grupo7
         static void Multiplicacion()
         {
             Console.WriteLine("\n\t\t -- Funcion de multiplicacion --\n");
-            Console.WriteLine("Descripcion: La multiplicación es una operación binaria que se establece en un conjunto numérico.2​ ");
-            Console.WriteLine("Tal el caso de números naturales, consiste en sumar un número tantas veces como indica otro número.\n");
+            Console.WriteLine(" Descripcion: La multiplicación es una operación binaria que se establece en un conjunto numérico.2​ ");
+            Console.WriteLine(" Tal el caso de números naturales, consiste en sumar un número tantas veces como indica otro número.\n");
 
-            Console.Write("Ingrese el primer valor: ");
-            double a = double.Parse(Console.ReadLine());
-            Console.Write("Ingrese el segundo valor: ");
-            double b = double.Parse(Console.ReadLine());
+            double a, b;
+            string s;
+            while (true)
+            {
+                Console.Write(" Ingrese el primer valor: ");
+                a = double.Parse(Console.ReadLine());
+                Console.Write(" Ingrese el segundo valor: ");
+                b = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("El resultado es: " + a * b);
+                Console.WriteLine(" El resultado es: " + a * b);
+
+                Console.Write("\n Desea realizar otra multiplicacion (Si presione Y, No presione otra tecla): ");
+                s = Console.ReadLine();
+                if (!s.Equals("Y",StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
+            }
+
+            Console.WriteLine(" -- Fin de la funcion --");
             Console.ReadLine();
         }
 

@@ -22,12 +22,26 @@ namespace practica1_grupo7
 
         static void numero_Primo()
         {
-            Console.WriteLine("--------------NUMERO PRIMO-------------");
-            Console.WriteLine("Ingrese el número");
-            int Numero = int.Parse(Console.ReadLine());
-            for (int i = 1; i < (Numero + 1); i++)
+            bool seguir = true;
+
+            while (seguir)
             {
-                if ((Numero % i) == 0)
+
+
+                Console.WriteLine("--------------NUMERO PRIMO-------------");
+                Console.WriteLine("Ingrese el número");
+                int Numero = int.Parse(Console.ReadLine());
+                int j = 0;
+                for (int i = 1; i < (Numero + 1); i++)
+                {
+                    if (Numero % i == 0)
+                    {
+                        j++;
+                    }
+                }
+            
+
+                if (j != 2)
                 {
                     Console.WriteLine("No Primo");
                 }
@@ -35,8 +49,19 @@ namespace practica1_grupo7
                 {
                     Console.WriteLine("Primo");
                 }
+                Console.WriteLine("¿Desea Comprobar otro numero?s/n");
+
+                string r = Console.ReadLine();
+                if (r.Equals("s"))
+                {
+
+                }
+                else
+                {
+                    seguir = false;
+                }
+
             }
-           
         }
 
         static void Discriminante()

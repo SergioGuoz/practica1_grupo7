@@ -15,8 +15,8 @@ namespace practica1_grupo7
             //Discriminante();
             //ValorAbsoluto();
             //Potencia_al_cubo();
-            //RaizAlCubo();
-            Division();
+            RaizAlCubo();
+            //Division();
             //Multiplicacion();
         }
 
@@ -108,8 +108,11 @@ namespace practica1_grupo7
             double potencia = 1.0 / 3.0;
             double resultado = Math.Pow(radicando, potencia);
 
-            Console.WriteLine("RESULTADO: Raiz Cubica de {0} es {1}" ,radicando,resultado);
-
+            //COLOREAR EL TEXTO DE ROJO
+            System.Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("RESULTADO:\nRaiz Cubica de {0} es {1}" ,radicando,resultado);
+            //COLOREAR EL TEXTO DE BLANCO
+            System.Console.ForegroundColor = ConsoleColor.White;
             //Esto es para poder ver el resultado y no se cierre la consola
             Console.ReadKey();
         }

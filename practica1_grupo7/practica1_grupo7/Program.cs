@@ -10,24 +10,69 @@ namespace practica1_grupo7
     {
         static void Main(string[] args)
         {
-           
-            //numero_Primo();
-            //Discriminante();
-            //ValorAbsoluto();
-            //Potencia_al_cubo();
-            //RaizAlCubo();
-            //Division();
-            Multiplicacion();
+            int opcion;
+            do
+            {
+                Console.WriteLine("Ingrese la opcion a la que desea ir....");
+                Console.WriteLine("1) Numero Primo");
+                Console.WriteLine("2) Discriminante");
+                Console.WriteLine("3) Valor Absoluto");
+                Console.WriteLine("4) Potencia al Cubo");
+                Console.WriteLine("5) Raiz al Cubo");
+                Console.WriteLine("6) Division");
+                Console.WriteLine("7) Multiplicacion");
+                opcion = int.Parse(Console.ReadLine());
+                switch (opcion)
+                {
+                    case 1:
+                        numero_Primo();
+                        break;
+                    case 2:
+                        Discriminante();
+                        break;
+                    case 3:
+                        ValorAbsoluto();
+                        break;
+                    case 4:
+                        Potencia_al_cubo();
+                        break;
+                    case 5:
+                        RaizAlCubo();
+                        break;
+                    case 6:
+                        Division();
+                        break;
+                    case 7:
+                        Multiplicacion();
+                        break;
+                }
+                Console.ReadKey();
+            } while (opcion!=8);
+            
         }
 
         static void numero_Primo()
         {
-            Console.WriteLine("--------------NUMERO PRIMO-------------");
-            Console.WriteLine("Ingrese el número");
-            int Numero = int.Parse(Console.ReadLine());
-            for (int i = 1; i < (Numero + 1); i++)
+            bool seguir = true;
+
+            while (seguir)
             {
-                if ((Numero % i) == 0)
+
+
+                Console.WriteLine("--------------NUMERO PRIMO-------------");
+                Console.WriteLine("Ingrese el número");
+                int Numero = int.Parse(Console.ReadLine());
+                int j = 0;
+                for (int i = 1; i < (Numero + 1); i++)
+                {
+                    if (Numero % i == 0)
+                    {
+                        j++;
+                    }
+                }
+            
+
+                if (j != 2)
                 {
                     Console.WriteLine("No Primo");
                 }
@@ -35,8 +80,19 @@ namespace practica1_grupo7
                 {
                     Console.WriteLine("Primo");
                 }
+                Console.WriteLine("¿Desea Comprobar otro numero?s/n");
+
+                string r = Console.ReadLine();
+                if (r.Equals("s"))
+                {
+
+                }
+                else
+                {
+                    seguir = false;
+                }
+
             }
-           
         }
 
         static void Discriminante()
@@ -82,7 +138,7 @@ namespace practica1_grupo7
         static void ValorAbsoluto()
         {
             int numero;
-          
+            string opcion;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("La siguinte funcion describe el como calcular un valor absoluto");
             Console.WriteLine("Un Valor absoluto es es tomar un numero sin importar su signo");
@@ -92,7 +148,24 @@ namespace practica1_grupo7
             Console.WriteLine("Porfavor Ingresar un numero");
             numero = int.Parse(Console.ReadLine());
             Console.WriteLine("El valor absulito de ({0}) es {1} ", numero, Math.Abs(numero));
-
+            Console.Write("\n");
+            Console.Write("Desea repetir la funcion? Escriba y/n (y=yes n=no)");
+            Console.Write("\n");
+            opcion = Console.ReadLine();
+            if (opcion == "y")
+            {
+                ValorAbsoluto();
+            }
+            else if (opcion == "n")
+            {
+                Console.WriteLine("Saliendo....");
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Opcion no valida");
+            }
             //Esto es para poder ver el resultado y no se cierre la consola
             Console.ReadKey();
         }

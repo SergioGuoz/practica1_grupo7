@@ -17,7 +17,9 @@ namespace practica1_grupo7
             Console.WriteLine("++============================================++");
             System.Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("||         LABORATORIO PRACTICA 1             ||");
+            Console.WriteLine("||         CALIFICACION PRACTICA 1            ||");
             Console.WriteLine("++--------------------------------------------++");
+
             System.Console.ForegroundColor = ConsoleColor.White;
 
             int opcion;

@@ -23,7 +23,8 @@ namespace practica1_grupo7
             int opcion;
             do
             {
-                Console.WriteLine("Ingrese la opcion a la que desea ir....");
+                Console.WriteLine("*****************************************");
+                Console.WriteLine("Ingrese la opcion a la que desea ir ....");
                 Console.WriteLine("1) Numero Primo");
                 Console.WriteLine("2) Discriminante");
                 Console.WriteLine("3) Valor Absoluto");

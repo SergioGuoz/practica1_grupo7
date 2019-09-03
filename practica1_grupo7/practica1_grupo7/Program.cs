@@ -11,7 +11,7 @@ namespace practica1_grupo7
         static void Main(string[] args)
         {
             System.Console.ForegroundColor = ConsoleColor.DarkCyan;
-
+            Console.WriteLine("--------------USAC-------------");
             Console.WriteLine("++============================================++");
             Console.WriteLine("||       ANALISIS Y DISEÑO DE SISTEMAS 1      ||");
             Console.WriteLine("++============================================++");
